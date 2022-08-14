@@ -11,7 +11,7 @@ class ProjectProject(models.Model):
 
     purchase_count = fields.Integer(
         compute='_compute_purchase_info', string='# Purchase')
-    purchase_line_total = fields.Integer(
+    purchase_line_total = fields.Float(
         compute='_compute_purchase_info', string='Purchase Total')
     purchase_invoice_count = fields.Integer(
         compute='_compute_purchase_invoice_info', string='# Purchase Invoice')
